@@ -5,6 +5,9 @@
   --primary-hover: #ce2425;
   --primary-size: 16px;
   --small-size: 16px;
+  --secondary: #979797;
+  --secondary-hover: #777777;
+  --text-medium: 500;
 }
 
 html,
@@ -12,7 +15,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: var(--font-family);
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
 }
 
@@ -44,4 +47,22 @@ a {
 
 .link-hover:hover {
   cursor: pointer;
+}
+
+.secondary-text {
+  color: var(--secondary);
+}
+
+.secondary-text a:hover {
+  color: var(--secondary-hover);
+}
+
+.text-medium {
+  font-weight: var(--text-medium);
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }

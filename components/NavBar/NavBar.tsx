@@ -2,16 +2,16 @@ import styles from '../../styles/NavBar.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
+
 function NavBar() {
   return (
     <div className="d-flex flex-column flex-md-row p-3 px-md-4 mb-2 bg-light border-bottom ">
       <nav className="my-2 my-md-0 mr-md-3 justify-content-between d-flex w-100">
-        <a
-          href="https://saloneverywhere.com/"
-          className={styles.logo + ' navbar-brand'}
-        >
-          <img src="logo.svg" alt="" />
-        </a>
+        <div className={styles.logo + ' navbar-brand'}>
+          <Link href="/">
+            <img src="logo.svg" alt="" />
+          </Link>
+        </div>
         <div className="row">
           <div className="col my-auto">
             <button className="primary-button">Join for free</button>

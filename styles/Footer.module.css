@@ -1,0 +1,12 @@
+.socialMedia {
+  cursor: pointer;
+  padding: 5px 10px;
+  height: 1.75em;
+  margin: 15px 0 20px 0;
+}
+
+.footer {
+  position: 'absolute';
+  bottom: 0;
+  width: '100%';
+}

@@ -1,4 +1,5 @@
 import MyProps from '../../types/MyProps';
+import Footer from '../Footer/Footer';
 import NavBar from '../NavBar/NavBar';
 
 export default function Layout(props: React.PropsWithChildren<MyProps>) {
@@ -6,6 +7,7 @@ export default function Layout(props: React.PropsWithChildren<MyProps>) {
     <>
       <NavBar />
       <div>{props.children}</div>
+      <Footer />
     </>
   );
 }
