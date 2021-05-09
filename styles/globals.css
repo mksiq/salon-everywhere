@@ -2,6 +2,7 @@
 :root {
   --font-family: Poppins, Helvetica, Arial, sans-serif;
   --primary: #dd2626;
+  --primary-hover: #ce2425;
   --primary-size: 16px;
   --small-size: 16px;
 }
@@ -35,4 +36,12 @@ a {
   height: auto;
   vertical-align: middle;
   font-size: var(--primary-size);
+}
+
+.primary-button:hover {
+  background-color: var(--primary-hover);
+}
+
+.link-hover:hover {
+  cursor: pointer;
 }
