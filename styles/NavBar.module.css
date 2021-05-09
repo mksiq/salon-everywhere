@@ -1,0 +1,10 @@
+.signIn {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.smallIcon {
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+}

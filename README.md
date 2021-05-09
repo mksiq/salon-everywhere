@@ -9,3 +9,9 @@ npm run dev
 # or
 yarn dev
 ```
+
+### Assets
+
+Most assets used are from SalonEverywhere itself, like SVGs for logos, page icon, and others.
+
+Font: Poppins from Google.
