@@ -1,0 +1,52 @@
+.signInContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signLabel {
+  position: relative;
+  width: 100%;
+}
+
+.signLabel input {
+  font-size: 1.2rem;
+  background: transparent;
+  padding: 1rem 3.2rem 1rem 1.2rem;
+  width: 100%;
+  border-radius: 0.2rem;
+  border: 2px solid #7a7a7a56;
+  transition: border-color 0.2s;
+  line-height: 15px;
+}
+
+.signLabel input:focus {
+  border-color: #838485;
+  color: #5c5d5e;
+}
+
+.signLabel p {
+  font-size: 1.2rem;
+  user-select: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 0.8rem;
+  color: #5c5d5e;
+  padding: 0 0.4rem;
+  transition: top 0.2s, font-size 0.2s, color 0.2s;
+}
+
+.signLabel input:focus + p,
+.signLabel input:not(:placeholder-shown),
+.signLabel input:not(:placeholder-shown) p {
+  top: 0;
+  font-size: 1rem;
+  color: #838485;
+  background-color: #fff;
+  border-color: #838485;
+}
+
+.signLabel input:not(:focus) + p {
+  color: #7a7a7a56;
+}

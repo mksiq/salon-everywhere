@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 function NavBar() {
   return (
-    <div className="d-flex flex-column flex-md-row p-3 px-md-4 mb-2 bg-light border-bottom ">
+    <div className="d-flex flex-column flex-md-row pt-3 pb-1 px-md-4 mb-4 border-bottom ">
       <nav className="my-2 my-md-0 mr-md-3 justify-content-between d-flex w-100">
         <div className={styles.logo + ' navbar-brand'}>
           <Link href="/">
