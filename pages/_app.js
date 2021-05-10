@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="theme-color" content="#000000" />
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="description" content="Hairstylist page" />
-        <title>Sales Dashboard</title>
+        <title>SalonEverywhere</title>
       </Head>
       <Layout>
         <Component {...pageProps} />

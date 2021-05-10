@@ -45,6 +45,7 @@
   color: #838485;
   background-color: #fff;
   border-color: #838485;
+  box-shadow: 0pc;
 }
 
 .signLabel input:not(:focus) + p {
