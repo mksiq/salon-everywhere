@@ -5,7 +5,6 @@ import { faDirections } from '@fortawesome/free-solid-svg-icons';
 import PartnerSocialMedia from '../PartnerSocialMedia/PartnerSocialMedia';
 
 export default function PartnerContact({ partner }: any) {
-  console.log(partner.address);
   return (
     <div>
       <div className="col">
