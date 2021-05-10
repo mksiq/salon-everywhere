@@ -1,6 +1,6 @@
 This a clone of a [page](https://saloneverywhere.com/people/melissa-hirtle-794768) from SalonEverywhere using [Next.js](https://nextjs.org/).
 
-Website is provisionally hosted on [Vercel](https://nextjs.org/docs/deployment). Link to hosted website: [link](https://salon-everywhere.vercel.app/)
+Website is provisionally hosted on [Vercel](https://vercel.com/dashboard). Link to hosted website: [link](https://salon-everywhere.vercel.app/)
 
 ## Getting Started
 
@@ -14,8 +14,8 @@ yarn dev
 
 ### Assets
 
-Most assets used are from SalonEverywhere itself, like SVGs for logos, images, and others.
+Most assets used are from SalonEverywhere itself, like: SVGs for logos, images, and others.
 
-Font: Poppins from Google.
+Font: Poppins from [Google](https://fonts.google.com/).
 
-Icons: Font Awesome
+Icons: [FontsAwesome](https://fontawesome.com/icons)
