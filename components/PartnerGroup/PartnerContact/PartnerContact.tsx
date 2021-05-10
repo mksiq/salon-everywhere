@@ -3,8 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar, faCommentDots } from '@fortawesome/free-regular-svg-icons';
 import { faDirections } from '@fortawesome/free-solid-svg-icons';
 import PartnerSocialMedia from '../PartnerSocialMedia/PartnerSocialMedia';
+import MyProps from '../../../types/MyProps';
 
-export default function PartnerContact({ partner }: any) {
+export default function PartnerContact({ partner }: MyProps) {
   return (
     <div>
       <div className="col">

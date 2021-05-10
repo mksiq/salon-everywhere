@@ -1,8 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faShare } from '@fortawesome/free-solid-svg-icons';
 import partnerStyle from '../../../styles/PartnerCard.module.css';
+import MyProps from '../../../types/MyProps';
 
-export default function PartnerCard({ partner }: any) {
+export default function PartnerCard({ partner }: MyProps) {
   return (
     <div className="row justify-content-between pb-3 mb-3 border-bottom">
       <div className="col-sm-12 col-md-5 d-flex ">

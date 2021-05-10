@@ -1,6 +1,7 @@
 import PartnerGroup from '../components/PartnerGroup/PartnerGroup';
 import Title from '../components/Title/title';
-import { server } from '../config';
+// import { server } from '../config';
+import { partner } from '../data/mockData';
 
 export default function Home({ partner }: any) {
   return (
@@ -14,8 +15,8 @@ export default function Home({ partner }: any) {
 }
 
 export const getStaticProps = async () => {
-  const res = await fetch(`${server}/api/partner`);
-  const partner = await res.json();
+  // const res = await fetch(`${server}/api/partner`);
+  // const partner = await res.json();
   return {
     props: {
       partner,

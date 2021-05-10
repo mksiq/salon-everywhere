@@ -4,8 +4,9 @@ import PartnerProfileInfo from '../PartnerProfileInfo/PartnerProfileInfo';
 import SpacingBar from '../../SpacingBar/SpacingBar';
 import partnerStyle from '../../../styles/Partner.module.css';
 import PartnerContact from '../PartnerContact/PartnerContact';
+import MyProps from '../../../types/MyProps';
 
-export default function PartnerInfo({ partner }: any) {
+export default function PartnerInfo({ partner }: MyProps) {
   const [active, setActive] = useState('profile');
 
   return (

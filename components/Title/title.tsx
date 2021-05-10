@@ -1,6 +1,7 @@
 import Head from 'next/head';
+import MyProps from '../../types/MyProps';
 
-export default function Title({ partner }: any) {
+export default function Title({ partner }: MyProps) {
   return (
     <Head>
       <title>

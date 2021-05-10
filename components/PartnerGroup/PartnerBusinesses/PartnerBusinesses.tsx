@@ -1,8 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarkerAlt, faShare } from '@fortawesome/free-solid-svg-icons';
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import businessesStyle from '../../../styles/PartnerBusinesses.module.css';
+import MyProps from '../../../types/MyProps';
 
-export default function PartnerBusinesses({ partner }: any) {
+export default function PartnerBusinesses({ partner }: MyProps) {
   return (
     <div>
       <div className="h3 secondary-text text-heavy">Businesses</div>

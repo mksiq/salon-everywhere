@@ -9,8 +9,9 @@ import SpacingBar from '../../SpacingBar/SpacingBar';
 import PartnerPortfolio from '../PartnerPortfolio/PartnerPortfolio';
 import profileStyle from '../../../styles/Partner.module.css';
 import PartnerBusinesses from '../PartnerBusinesses/PartnerBusinesses';
+import MyProps from '../../../types/MyProps';
 
-export default function PartnerProfileInfo({ partner }: any) {
+export default function PartnerProfileInfo({ partner }: MyProps) {
   const shortText = partner.description.substring(0, 318) + '...';
   const [displayText, setDisplayText] = useState(shortText);
   const [toggleIcon, setToggleIcon] = useState(

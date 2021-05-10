@@ -6,8 +6,9 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import contactStyle from '../../../styles/PartnerContact.module.css';
+import MyProps from '../../../types/MyProps';
 
-export default function PartnerSocialMedia({ partner }: any) {
+export default function PartnerSocialMedia({ partner }: MyProps) {
   return (
     <div className="container mt-3">
       <div className={contactStyle.roundSquare}>
