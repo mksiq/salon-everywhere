@@ -4,9 +4,10 @@ import {
   faAngleDoubleDown,
   faAngleDoubleUp,
 } from '@fortawesome/free-solid-svg-icons';
-import profileStyle from '../../../styles/Partner.module.css';
 import PartnerSkills from '../PartnerSkills/PartnerSkills';
 import SpacingBar from '../../SpacingBar/SpacingBar';
+import PartnerPortfolio from '../PartnerPortfolio/PartnerPortfolio';
+import profileStyle from '../../../styles/Partner.module.css';
 
 export default function PartnerProfileInfo({ partner }: any) {
   const shortText = partner.description.substring(0, 318) + '...';
@@ -49,12 +50,15 @@ export default function PartnerProfileInfo({ partner }: any) {
         })}
         <div className={profileStyle.profile + ' my-auto'}>{toggleIcon}</div>
       </div>
-      <br />
-      <br />
+      <br /> <br /> <br />
       <SpacingBar height={5} />
       <br />
       <br />
       <PartnerSkills partner={partner} />
+      <br /> <br /> <br />
+      <SpacingBar height={5} />
+      <br /> <br />
+      <PartnerPortfolio partner={partner} complete={false} />
     </div>
   );
 }

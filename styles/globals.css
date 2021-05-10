@@ -20,6 +20,8 @@ body {
   font-family: var(--font-family);
   min-height: 100vh;
   width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -54,6 +56,10 @@ a {
 
 .secondary-text {
   color: var(--secondary);
+}
+
+.primary-text {
+  color: var(--primary);
 }
 
 .secondary-text a:hover {

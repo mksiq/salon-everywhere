@@ -50,8 +50,8 @@ function Footer() {
         <div className="secondary-text bold text-center">
           <p className="mb-0">© 2021 SalonEverywhere. All rights reserved.</p>
           <p>
-            The creator of this page does not hold any copyright to any material
-            use and he is not related to SalonEverywhere ... yet? :).
+            The creator of this page does not hold any copyright to the material
+            used and he is not related to SalonEverywhere ... yet? :).
           </p>
         </div>
       </div>

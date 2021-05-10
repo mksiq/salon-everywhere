@@ -16,5 +16,37 @@
   color: var(--primary);
   text-align: center;
   display: inline-block;
-  padding: 1px 20px;
+  padding: 3px 15px;
+  margin: 7px;
+}
+
+.starIcon {
+  width: 18px;
+  color: var(white);
+  margin-bottom: 2px;
+  margin-left: 8px;
+}
+
+.portfolioImg {
+  width: 200px;
+  border: 2px solid var(--secondary-light);
+  border-radius: 10px;
+}
+
+.cardItem {
+  max-width: 200px;
+  margin: 10px;
+}
+.portfolioType {
+  text-decoration: underline;
+}
+
+.imageIcon {
+  width: 18px;
+  color: var(--secondary);
+  margin-bottom: 3px;
+}
+.imagesLength {
+  font-size: 1em;
+  color: var(--secondary);
 }
