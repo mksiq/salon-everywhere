@@ -1,0 +1,59 @@
+.image {
+  border: 1px solid var(--secondary-light);
+  width: 150px;
+  border-radius: 10px;
+}
+
+.type {
+  color: var(--secondary);
+}
+
+.name {
+  color: var(--primary);
+  font-weight: var(--text-medium);
+  font-size: 1.3em;
+  text-decoration: underline;
+}
+
+.name:hover {
+  color: var(--primary);
+}
+
+.icon {
+  width: 14px;
+}
+
+.businessType {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  padding: 2px;
+  font-size: 0.8em;
+}
+
+.imageItem {
+  height: 150px;
+  position: relative;
+  width: 150px;
+  border: 1px solid var(--secondary-light);
+  border-radius: 10px;
+  margin: 10px;
+}
+.imageItem > img {
+  width: 150px;
+  border: 1px solid var(--secondary-light);
+  border-radius: 10px;
+}
+.description {
+  float: left;
+  position: absolute;
+  left: 0px;
+  bottom: -5px;
+  z-index: 1000;
+  background-color: #000;
+  opacity: 0.6;
+  padding: 5px;
+  color: #ffffff;
+  width: 150px;
+  border-radius: 0 0 10px 10px;
+}

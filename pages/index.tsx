@@ -168,7 +168,28 @@ export const getStaticProps = async () => {
       },
     ],
     inspiration: '',
-    businesses: [],
+    businesses: [
+      {
+        role: 'Owner & Stylist',
+        name: 'Meraki Hair Beautik',
+        businessType: 'Hair Salon',
+        address: 'Rockingham, Halifax, NS',
+        image:
+          'https://res.cloudinary.com/saloneverywhere/image/upload/ar_1,c_fill,dpr_auto,q_auto,w_300/instances/1420/user_uploads/520/bddhrmzmq9cpnhi2l0dm',
+        items: [
+          {
+            image:
+              'https://res.cloudinary.com/saloneverywhere/image/upload/dpr_auto,f_auto,q_auto,w_750/instances/1420/user_uploads/520/saxgyawb66looo8jfxmq',
+            title: 'My Space',
+          },
+          {
+            image:
+              'https://res.cloudinary.com/saloneverywhere/image/upload/dpr_auto,f_auto,q_auto,w_750/instances/1420/user_uploads/520/d2fpddn055dtt24gjrx2',
+            title: 'Products',
+          },
+        ],
+      },
+    ],
   };
 
   return {
