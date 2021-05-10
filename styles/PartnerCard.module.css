@@ -3,6 +3,7 @@
   border-radius: 50%;
   border: 1px solid var(--secondary-light);
   margin-right: 20px;
+  margin-left: 10px;
 }
 
 .info {
@@ -10,7 +11,7 @@
 }
 
 .rightBar {
-  margin-left: 20px;
+  margin-left: 0px;
   border-right: 1px solid var(--secondary-light);
 }
 

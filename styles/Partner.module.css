@@ -1,0 +1,20 @@
+.arrowIcon {
+  width: 12px;
+  color: var(--primary);
+}
+
+.profile {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pill {
+  border: 1px solid var(--primary);
+  border-radius: 20px;
+  color: var(--primary);
+  text-align: center;
+  display: inline-block;
+  padding: 1px 20px;
+}

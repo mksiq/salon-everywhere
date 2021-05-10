@@ -1,0 +1,27 @@
+.options > button {
+  background-color: white;
+  padding: 5px 30px;
+  color: var(--secondary);
+  font-weight: 600;
+  border: none;
+}
+
+.options > button:hover {
+  color: var(--secondary-hover);
+  border-width: 0 0 1px 0;
+  border-style: solid;
+}
+
+.option > button:hover {
+  border-color: var(--secondary-hover);
+}
+
+.options.active > button {
+  color: var(--primary);
+  border-width: 0 0 1px 0;
+  border-style: solid;
+}
+
+.options.active > button:hover {
+  color: var(--primary);
+}

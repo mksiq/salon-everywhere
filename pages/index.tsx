@@ -1,24 +1,21 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
-import NavBar from '../components/NavBar/NavBar';
-import Partner from '../model/Partner.model';
-import PartnerCard from '../components/PartnerCard/PartnerCard';
+import PartnerGroup from '../components/PartnerGroup/PartnerGroup';
 import Title from '../components/Title/title';
 
 export default function Home({ partner }: any) {
   return (
     <>
-      <Head>
-        <Title partner={partner} />
-      </Head>
-      <PartnerCard partner={partner} />
+      <Title partner={partner} />
+      <PartnerGroup partner={partner} />
+      <div className="col-sm-12 col-md-4"></div>
     </>
   );
 }
 
 export const getStaticProps = async () => {
   const partner = {
+    _id: 1,
+    id: 'melissa-hirtle-794768',
     name: 'Melissa Hirtle',
     tag: '@melissa-hirtle-794768',
     location: {
@@ -28,7 +25,8 @@ export const getStaticProps = async () => {
       country: 'CA',
     },
     roles: ['Hairstylist', 'Service Business Owner or Principal'],
-    description: `I bring over 20 years of dedicated experience to my valued clientele.
+    description: `
+    I bring over 20 years of dedicated experience to my valued clientele.
 
   I have an adoration for doing color but I equally enjoy cutting short and long hair.
   
