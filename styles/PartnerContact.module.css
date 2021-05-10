@@ -21,3 +21,16 @@
   font-weight: var(--text-medium);
   font-size: 0.9em;
 }
+
+.socialMedia {
+  width: 12px;
+  margin-right: 15px;
+}
+
+.link:hover {
+  color: black;
+}
+
+.socialMediaText {
+  font-size: 0.9em;
+}

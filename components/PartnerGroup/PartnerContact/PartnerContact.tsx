@@ -2,6 +2,7 @@ import contactStyle from '../../../styles/PartnerContact.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar, faCommentDots } from '@fortawesome/free-regular-svg-icons';
 import { faDirections } from '@fortawesome/free-solid-svg-icons';
+import PartnerSocialMedia from '../PartnerSocialMedia/PartnerSocialMedia';
 
 export default function PartnerContact({ partner }: any) {
   console.log(partner.address);
@@ -78,6 +79,8 @@ export default function PartnerContact({ partner }: any) {
           </div>
         </div>
       </div>
+
+      <PartnerSocialMedia partner={partner} />
     </div>
   );
 }
