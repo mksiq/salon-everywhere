@@ -1,0 +1,23 @@
+.roundSquare {
+  border: 1px solid var(--secondary-light);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.icon {
+  color: var(--primary);
+  width: 14px;
+  margin-left: 10px;
+}
+
+.title {
+  color: var(--primary);
+  text-decoration: underline;
+  font-weight: var(--text-medium);
+  font-size: 0.9em;
+}
+
+.callToAction {
+  font-weight: var(--text-medium);
+  font-size: 0.9em;
+}

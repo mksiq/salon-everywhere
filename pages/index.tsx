@@ -20,6 +20,7 @@ export const getStaticProps = async () => {
     name: 'Melissa Hirtle',
     tag: '@melissa-hirtle-794768',
     location: {
+      address: '660 Bedford Hwy, Rockingham, Halifax, NS, CAN, B3M 0M5',
       neighborhood: 'Rockingham',
       city: 'Halifax',
       provinceState: 'NS',

@@ -50,3 +50,7 @@
   font-size: 1em;
   color: var(--secondary);
 }
+
+.customContainer {
+  padding: 0 30px;
+}
