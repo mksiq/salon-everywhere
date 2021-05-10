@@ -4,7 +4,7 @@ import partnerStyle from '../../../styles/PartnerCard.module.css';
 
 export default function PartnerCard({ partner }: any) {
   return (
-    <div className="row justify-content-between">
+    <div className="row justify-content-between pb-3 mb-3 border-bottom">
       <div className="col-sm-12 col-md-5 d-flex ">
         <div>
           <img

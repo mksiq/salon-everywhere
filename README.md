@@ -1,5 +1,7 @@
 This a clone of a [page](https://saloneverywhere.com/people/melissa-hirtle-794768) from SalonEverywhere using [Next.js](https://nextjs.org/).
 
+Website is provisionally hosted on [Vercel](https://nextjs.org/docs/deployment)
+
 ## Getting Started
 
 First, run the development server:

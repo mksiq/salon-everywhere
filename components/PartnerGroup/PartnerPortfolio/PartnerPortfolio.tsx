@@ -30,18 +30,16 @@ export default function PartnerPortfolio({ partner, complete }: any) {
               <div className="d-flex">
                 {portfolio.images.map((image: string, index: number) => {
                   return (
-                    <>
-                      <div
-                        className={partnerStyle.cardItem + ' text-center'}
-                        key={index}
-                      >
-                        <img
-                          className={partnerStyle.portfolioImg}
-                          src={image}
-                          alt={'Picture of ' + portfolio.type}
-                        />
-                      </div>
-                    </>
+                    <div
+                      className={partnerStyle.cardItem + ' text-center'}
+                      key={index}
+                    >
+                      <img
+                        className={partnerStyle.portfolioImg}
+                        src={image}
+                        alt={'Picture of ' + portfolio.type}
+                      />
+                    </div>
                   );
                 })}
               </div>

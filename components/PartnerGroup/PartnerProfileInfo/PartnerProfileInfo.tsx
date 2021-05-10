@@ -8,6 +8,7 @@ import PartnerSkills from '../PartnerSkills/PartnerSkills';
 import SpacingBar from '../../SpacingBar/SpacingBar';
 import PartnerPortfolio from '../PartnerPortfolio/PartnerPortfolio';
 import profileStyle from '../../../styles/Partner.module.css';
+import PartnerBusinesses from '../PartnerBusinesses/PartnerBusinesses';
 
 export default function PartnerProfileInfo({ partner }: any) {
   const shortText = partner.description.substring(0, 318) + '...';
@@ -59,6 +60,11 @@ export default function PartnerProfileInfo({ partner }: any) {
       <SpacingBar height={5} />
       <br /> <br />
       <PartnerPortfolio partner={partner} complete={false} />
+      <br /> <br /> <br />
+      <SpacingBar height={5} />
+      <br /> <br />
+      <PartnerBusinesses partner={partner} />
+      <br /> <br />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import styles from '../../styles/NavBar.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
+import { faUserCircle } from '@fortawesome/free-regular-svg-icons';
 import Link from 'next/link';
 
 function NavBar() {
