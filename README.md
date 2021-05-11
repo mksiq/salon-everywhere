@@ -1,6 +1,8 @@
 This a clone of a [page](https://saloneverywhere.com/people/melissa-hirtle-794768) from SalonEverywhere using [Next.js](https://nextjs.org/).
 
-Website is provisionally hosted on [Vercel](https://vercel.com/dashboard). Link to hosted website: [link](https://salon-everywhere.vercel.app/)
+Website and its database is hosted on AWS [Amplify](https://aws.amazon.com/amplify/). Link to hosted website: [link](https://salon-everywhere.vercel.app/)
+
+## Images
 
 ## Getting Started
 
