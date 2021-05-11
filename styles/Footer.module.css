@@ -5,6 +5,10 @@
   margin: 15px 0 20px 0;
 }
 
+.socialMedia:hover {
+  color: black;
+}
+
 .footer {
   position: 'absolute';
   bottom: 0;

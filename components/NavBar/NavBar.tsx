@@ -10,14 +10,16 @@ function NavBar() {
         <div className={styles.mobile + ' col-12 col-md-6'}>
           <div className={styles.logo + ' navbar-brand'}>
             <Link href="/">
-              <img src="logo.svg" alt="" />
+              <img src="logo.svg" alt="SalonEverywhere Logo" />
             </Link>
           </div>
         </div>
         <div className={styles.mobile + ' col-12 col-md-3'}>
           <div className="row">
             <div className="col my-auto">
-              <button className="primary-button">Join for free</button>
+              <Link href="https://saloneverywhere.com/">
+                <button className="primary-button">Join for free</button>
+              </Link>
             </div>
             <div className="col d-inline text-center">
               <Link href="/sign-in">

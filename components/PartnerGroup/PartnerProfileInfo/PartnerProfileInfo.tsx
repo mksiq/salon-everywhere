@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faAngleDoubleDown,
@@ -14,6 +14,11 @@ import MyProps from '../../../types/MyProps';
 export default function PartnerProfileInfo({ partner }: MyProps) {
   const shortText = partner.description.substring(0, 318) + '...';
   const [displayText, setDisplayText] = useState(shortText);
+
+  useEffect(() => {
+    setDisplayText(shortText);
+  }, [partner.description]);
+
   const [toggleIcon, setToggleIcon] = useState(
     <FontAwesomeIcon
       icon={faAngleDoubleDown}

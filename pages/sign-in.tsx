@@ -27,7 +27,7 @@ export default function SignUp() {
             <div className="row mt-4 justify-content-between ">
               <div className="col-12 col-md-6 text-center text-md-start">
                 <button className="primary-button mr-4" type="submit">
-                  Register
+                  Sign In
                 </button>
               </div>
               <div className="col-12 mt-3 mt-md-0 col-md-6 text-center text-md-end">

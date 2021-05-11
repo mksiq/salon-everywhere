@@ -47,7 +47,7 @@ export default function PartnerBusinesses({ partner }: MyProps) {
                 return (
                   <div key={index}>
                     <div className={businessesStyle.imageItem}>
-                      <img src={item.image} alt="" />
+                      <img src={item.image} alt={item.title} />
                       <div className={businessesStyle.description}>
                         {item.title}
                       </div>

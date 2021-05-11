@@ -18,7 +18,7 @@ export default function PartnerCard({ partner }: MyProps) {
         <div>
           <img
             className={partnerStyle.picture}
-            src={'/partners/profile/' + partner._id + '.webp'}
+            src={'/partners/profile/1.webp'}
             alt={partner.name}
           />
         </div>

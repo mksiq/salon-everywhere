@@ -1,0 +1,42 @@
+type Item {
+  image: String
+  title: String
+}
+
+type Business {
+  role: String
+  name: String
+  businessType: String
+  address: String
+  image: String
+  items: [Item]
+}
+
+type Portfolio {
+  id: String
+  type: String
+  images: [String]
+}
+
+type Location {
+  address: String
+  neighborhood: String
+  city: String
+  provinceState: String
+  country: String
+}
+
+type Partner @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  _id: String
+  name: String
+  tag: String
+  location: Location
+  roles: [String]
+  description: String
+  skills: [String]
+  portfolio: [Portfolio]
+  inspiration: String
+  businesses: [Business]
+}
+ 

@@ -1,25 +1,28 @@
+import { useEffect, useState } from 'react';
 import PartnerGroup from '../components/PartnerGroup/PartnerGroup';
 import Title from '../components/Title/title';
-// import { server } from '../config';
-import { partner } from '../data/mockData';
 
-export default function Home({ partner }: any) {
+import { emptyPartner } from '../data/mockData';
+import { DataStore } from '@aws-amplify/datastore';
+import { Partner } from '../models';
+
+export default function Home() {
+  const [partnerItem, setPartnerItem] = useState(emptyPartner);
+  useEffect(() => {
+    const fetchPartners = async () => {
+      const partnersData = await DataStore.query(Partner);
+      const partnerData = partnersData[0] as Partner;
+      setPartnerItem(partnerData);
+    };
+    fetchPartners();
+  }, []);
+
   return (
     <>
-      <Title partner={partner} />
-      <PartnerGroup partner={partner} />
+      <Title partner={partnerItem} />
+      <PartnerGroup partner={partnerItem} />
 
       <div className="col-sm-12 col-md-4"></div>
     </>
   );
 }
-
-export const getStaticProps = async () => {
-  // const res = await fetch(`${server}/api/partner`);
-  // const partner = await res.json();
-  return {
-    props: {
-      partner,
-    },
-  };
-};

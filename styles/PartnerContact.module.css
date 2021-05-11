@@ -24,6 +24,10 @@
   font-size: 0.9em;
 }
 
+.title:hover {
+  color: var(--primary);
+}
+
 .callToAction {
   font-weight: var(--text-medium);
   font-size: 0.9em;
@@ -34,7 +38,8 @@
   margin-right: 15px;
 }
 
-.link a:hover {
+.link a:hover,
+.link:hover {
   color: black;
 }
 
