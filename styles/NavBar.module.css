@@ -8,3 +8,9 @@
   text-align: center;
   width: 30px;
 }
+
+@media only screen and (max-width: 600px) {
+  .mobile {
+    margin-left: 20px;
+  }
+}

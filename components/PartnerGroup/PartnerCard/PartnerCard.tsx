@@ -14,7 +14,7 @@ export default function PartnerCard({ partner }: MyProps) {
             alt={partner.name}
           />
         </div>
-        <div className="flex-grow-1 ">
+        <div className="flex-grow-1">
           <h2>{partner.name}</h2>
           <div className="secondary-text text-medium">{partner.tag}</div>
           <div className="d-flex">
@@ -32,7 +32,11 @@ export default function PartnerCard({ partner }: MyProps) {
         <div className={partnerStyle.rightBar + ' d-none d-md-block'}></div>
       </div>
 
-      <div className="col-sm-11 col-md-6 d-flex align-items-center">
+      <div
+        className={
+          partnerStyle.mobile + ' col-sm-11 col-md-6 d-flex align-items-center'
+        }
+      >
         {partner.roles.map((role: string, index: number) => {
           return (
             <div key={index} className={partnerStyle.role}>

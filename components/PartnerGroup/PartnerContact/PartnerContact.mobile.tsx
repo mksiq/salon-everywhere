@@ -5,82 +5,55 @@ import { faDirections } from '@fortawesome/free-solid-svg-icons';
 import PartnerSocialMedia from '../PartnerSocialMedia/PartnerSocialMedia';
 import MyProps from '../../../types/MyProps';
 
-export default function PartnerContact({ partner }: MyProps) {
+export default function PartnerContactMobile({ partner }: MyProps) {
   return (
     <>
-      <div className="col d-none d-md-block">
+      <div>
         <div className="container">
           <div className={contactStyle.roundSquare}>
             <div className="row">
-              <div className="col-12 col-md-2 text-center">
+              <div className="col-4 text-center border-end">
                 <FontAwesomeIcon
                   icon={faCalendar}
                   className={contactStyle.icon}
                 />{' '}
-              </div>
-              <div className="col-12 col-md-10">
                 <a
                   href="https://square.site/book/1EN6V6N9FS1X8/meraki-hair-beautik-bedford-ns"
                   className={contactStyle.title}
                 >
-                  Book Now
+                  <p> Book Now</p>
                 </a>
               </div>
-              <div className="row">
-                <div className={contactStyle.callToAction + ' col-10 offset-2'}>
-                  Book through {partner.name}
-                </div>
-              </div>
-            </div>
-            <hr className="my-1" />
-            <div className="row">
-              <div className="col-12 col-md-2 text-center">
+              <div className="col-4 text-center border-end">
                 <FontAwesomeIcon
                   icon={faCommentDots}
                   className={contactStyle.icon}
                 />{' '}
-              </div>
-              <div className="col-12 col-md-10">
                 <a
                   href="http://m.me/merakihairbeautik"
                   className={contactStyle.title}
                 >
-                  Send Message
+                  <p>Send Message</p>
                 </a>
               </div>
-              <div className="row">
-                <div className={contactStyle.callToAction + ' col-10 offset-2'}>
-                  Message {partner.name}
-                </div>
-              </div>
-            </div>
-            <hr className="my-1" />
-            <div className="row">
-              <div className="col-12 col-md-2 text-center">
+              <div className="col-4 text-center">
                 <FontAwesomeIcon
                   icon={faDirections}
                   className={contactStyle.icon}
                 />{' '}
-              </div>
-              <div className="col-12 col-md-10">
                 <a
                   href="https://www.google.com/maps/search/?api=1&query=660+Bedford+Hwy%2C+Rockingham%2C+Halifax%2C+NS%2C+CAN%2C+B3M+0M5"
                   className={contactStyle.title}
                 >
-                  Get Directions
+                  <p>Get Directions</p>
                 </a>
               </div>
-              <div className="row">
-                <div className={contactStyle.callToAction + ' col-10 offset-2'}>
-                  {partner.location.address}
-                </div>
-              </div>
             </div>
+            <div className="col-12 col-md-2 text-center"></div>
           </div>
+          <div className="col-12 col-md-2 text-center"></div>
         </div>
       </div>
-
-      <PartnerSocialMedia partner={partner} />
     </>
   );
 }

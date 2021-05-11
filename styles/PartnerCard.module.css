@@ -36,7 +36,28 @@
 
 .mediumIcon {
   min-width: 30px;
-  max-width: 60px;
+  max-width: 50px;
   margin-right: 10px;
   vertical-align: middle;
+}
+
+@media only screen and (max-width: 600px) {
+  .mobile {
+    margin-top: 20px;
+    margin-left: 5px;
+  }
+  .share {
+    color: var(--primary);
+    margin-left: 10px;
+  }
+  .mediumIcon {
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mobile {
+    margin-top: 20px;
+    margin-left: 5px;
+  }
 }

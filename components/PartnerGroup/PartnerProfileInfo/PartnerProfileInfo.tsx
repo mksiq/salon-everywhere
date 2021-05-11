@@ -52,20 +52,19 @@ export default function PartnerProfileInfo({ partner }: MyProps) {
         })}
         <div className={profileStyle.profile + ' my-auto'}>{toggleIcon}</div>
       </div>
-      <br /> <br /> <br />
+      <br />
       <SpacingBar height={5} />
-      <br />
-      <br />
+      <br className="mb-md-3" />
       <PartnerSkills partner={partner} />
-      <br /> <br /> <br />
+      <br className="mb-md-3" />
       <SpacingBar height={5} />
-      <br /> <br />
+      <br />
       <PartnerPortfolio partner={partner} complete={false} />
-      <br /> <br /> <br />
+      <br className="mb-md-3" />
       <SpacingBar height={5} />
-      <br /> <br />
+      <br className="mb-md-3" />
       <PartnerBusinesses partner={partner} />
-      <br /> <br />
+      <br />
     </div>
   );
 }

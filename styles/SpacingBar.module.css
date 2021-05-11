@@ -1,0 +1,10 @@
+.bar {
+  width: 100%;
+  background-color: var(--secondary-light);
+}
+
+@media only screen and (max-width: 600px) {
+  .bar {
+    display: none;
+  }
+}

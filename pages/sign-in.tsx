@@ -24,13 +24,13 @@ export default function SignUp() {
                 <p>Password</p>
               </label>
             </div>
-            <div className="container d-flex mt-4 justify-content-between ">
-              <div className="mr-4">
+            <div className="row mt-4 justify-content-between ">
+              <div className="col-12 col-md-6 text-center text-md-start">
                 <button className="primary-button mr-4" type="submit">
                   Register
                 </button>
               </div>
-              <div>
+              <div className="col-12 mt-3 mt-md-0 col-md-6 text-center text-md-end">
                 <Link href="">Join for Free </Link>
                 <span className="m-2 ml-2 text-muted">|</span>
                 <Link href="">Reset your password</Link>
