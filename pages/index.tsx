@@ -6,34 +6,26 @@ import Router from 'next/router';
 import { emptyPartner } from '../data/mockData';
 import { DataStore } from '@aws-amplify/datastore';
 import { Partner } from '../models';
+import MyProps from '../types/MyProps';
 
-export default function Home() {
-  const [partnerItem, setPartnerItem] = useState(emptyPartner);
-
-  useEffect(() => {
-    fetchPartners();
-    async function fetchPartners() {
-      const partnersData = await DataStore.query(Partner);
-      const partnerData = partnersData[0] as Partner;
-
-      if (partnerData) {
-        setPartnerItem(partnerData);
-      } else {
-        /* Without amplify will return as undefined for the first time it is load forcing the
-         * user to refresh*/
-        setTimeout(() => {
-          setPartnerItem(partnerData);
-          Router.reload();
-        }, 300);
-      }
-    }
-  }, []);
-
+export default function Home({ partner }: MyProps) {
   return (
     <>
-      <Title partner={partnerItem} />
-      <PartnerGroup partner={partnerItem} />
+      <Title partner={partner} />
+      <PartnerGroup partner={partner} />
       <div className="col-sm-12 col-md-4"></div>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const partnersData = await DataStore.query(Partner);
+
+  const partner = JSON.parse(JSON.stringify(partnersData[0]));
+
+  return {
+    props: {
+      partner,
+    },
+  };
 }
