@@ -4,7 +4,7 @@ Website and its database is hosted on AWS [Amplify](https://aws.amazon.com/ampli
 
 ## Images
 
-![Preview](./preview.png)]
+![Preview](./preview.png)
 
 ## Getting Started
 

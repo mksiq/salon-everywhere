@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PartnerGroup from '../components/PartnerGroup/PartnerGroup';
 import Title from '../components/Title/title';
 import Router from 'next/router';
@@ -9,16 +9,25 @@ import { Partner } from '../models';
 
 export default function Home() {
   const [partnerItem, setPartnerItem] = useState(emptyPartner);
+
   useEffect(() => {
-    const fetchPartners = async () => {
+    fetchPartners();
+    async function fetchPartners() {
       const partnersData = await DataStore.query(Partner);
       const partnerData = partnersData[0] as Partner;
-      setPartnerItem(partnerData);
-    };
-    (async () => {
-      await fetchPartners();
-    })();
-  }, [partnerItem]);
+
+      if (partnerData) {
+        setPartnerItem(partnerData);
+      } else {
+        /* Without amplify will return as undefined for the first time it is load forcing the
+         * user to refresh*/
+        setTimeout(() => {
+          setPartnerItem(partnerData);
+          Router.reload();
+        }, 300);
+      }
+    }
+  }, []);
 
   return (
     <>

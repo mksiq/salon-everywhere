@@ -1,7 +1,7 @@
 export const emptyPartner: any = {
   _id: '',
   id: '',
-  name: '',
+  name: 'Partner Stylist',
   tag: '',
   location: {
     address: '',
