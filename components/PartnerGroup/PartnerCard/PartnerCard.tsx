@@ -2,8 +2,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faShare } from '@fortawesome/free-solid-svg-icons';
 import partnerStyle from '../../../styles/PartnerCard.module.css';
 import MyProps from '../../../types/MyProps';
+import PartnerShareModal from '../PartnerShareModal/PartnerShareModal';
+import { useState } from 'react';
 
 export default function PartnerCard({ partner }: MyProps) {
+  const [modal, setModal] = useState(false);
+
+  const toggleModal = () => {
+    setModal(!modal);
+  };
+
   return (
     <div className="row justify-content-between pb-3 mb-3 border-bottom">
       <div className="col-sm-12 col-md-5 d-flex ">
@@ -46,11 +54,18 @@ export default function PartnerCard({ partner }: MyProps) {
         })}
       </div>
       <div className={partnerStyle.share + ' col-1'}>
-        <FontAwesomeIcon
-          icon={faShare}
-          className={partnerStyle.mediumIcon + ' mt-2'}
+        <button className={partnerStyle.share} onClick={(e) => toggleModal()}>
+          <FontAwesomeIcon
+            icon={faShare}
+            className={partnerStyle.mediumIcon + ' mt-2'}
+          />
+          <p>Share</p>
+        </button>
+        <PartnerShareModal
+          partner={partner}
+          visible={modal}
+          toggleModal={toggleModal}
         />
-        <p>Share</p>
       </div>
     </div>
   );

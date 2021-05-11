@@ -32,6 +32,10 @@
 
 .share {
   color: var(--primary);
+  border: none;
+  background-color: white;
+  padding: 0;
+  margin: 0;
 }
 
 .mediumIcon {
@@ -48,16 +52,9 @@
   }
   .share {
     color: var(--primary);
-    margin-left: 10px;
+    margin-left: 30px;
   }
   .mediumIcon {
     margin-right: 0px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .mobile {
-    margin-top: 20px;
-    margin-left: 5px;
   }
 }

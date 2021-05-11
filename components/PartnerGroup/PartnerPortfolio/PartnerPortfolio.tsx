@@ -15,46 +15,44 @@ export default function PartnerPortfolio({ partner, complete }: any) {
         {partner.portfolio.map(
           (portfolio: { id: number; type: string; images: Array<string> }) => {
             return (
-              <>
-                <div key={portfolio.id}>
-                  <div>
-                    <span
-                      className={
-                        partnerStyle.portfolioType +
-                        ' h4  text-heavy primary-text'
-                      }
-                    >
-                      {portfolio.type}
-                    </span>
-                    {'  '}
-                    <FontAwesomeIcon
-                      icon={faImages}
-                      className={partnerStyle.imageIcon}
-                    />{' '}
-                    {'  '}
-                    <span className={partnerStyle.imagesLength}>
-                      {portfolio.images.length}
-                    </span>
-                  </div>
-                  <div className="d-flex">
-                    {portfolio.images.map((image: string, index: number) => {
-                      return (
-                        <div
-                          className={partnerStyle.cardItem + ' text-center'}
-                          key={index}
-                        >
-                          <img
-                            className={partnerStyle.portfolioImg}
-                            src={image}
-                            alt={'Picture of ' + portfolio.type}
-                          />
-                        </div>
-                      );
-                    })}
-                  </div>
-                  <hr />
+              <div key={portfolio.id}>
+                <div>
+                  <span
+                    className={
+                      partnerStyle.portfolioType +
+                      ' h4  text-heavy primary-text'
+                    }
+                  >
+                    {portfolio.type}
+                  </span>
+                  {'  '}
+                  <FontAwesomeIcon
+                    icon={faImages}
+                    className={partnerStyle.imageIcon}
+                  />{' '}
+                  {'  '}
+                  <span className={partnerStyle.imagesLength}>
+                    {portfolio.images.length}
+                  </span>
                 </div>
-              </>
+                <div className="d-flex">
+                  {portfolio.images.map((image: string, index: number) => {
+                    return (
+                      <div
+                        className={partnerStyle.cardItem + ' text-center'}
+                        key={index}
+                      >
+                        <img
+                          className={partnerStyle.portfolioImg}
+                          src={image}
+                          alt={'Picture of ' + portfolio.type}
+                        />
+                      </div>
+                    );
+                  })}
+                </div>
+                <hr />
+              </div>
             );
           }
         )}

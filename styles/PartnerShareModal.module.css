@@ -1,0 +1,91 @@
+.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.8;
+  z-index: 999;
+}
+
+.modal {
+  width: 50%;
+  height: 35%;
+  min-height: 300px;
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  background-color: white;
+  opacity: 1;
+  border-radius: 20px;
+  z-index: 1000;
+}
+
+.input {
+  background-color: #eee;
+  border: 1px solid var(--secondary-light);
+  border-radius: 5px;
+  padding: 6px 10px;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 20px;
+}
+
+.shareProfile {
+  color: var(--primary);
+  font-size: 1.2em;
+  font-weight: var(--text-heavy);
+  margin-bottom: 5%;
+  margin-left: 2.5%;
+}
+
+.facebook,
+.email {
+  color: black;
+  font-weight: var(--text-medium);
+  margin-left: 2.5%;
+}
+
+.icon {
+  min-width: 25px;
+  max-height: 25px;
+  margin-right: 20px;
+}
+
+.closeButton {
+  margin-left: 95%;
+  margin-top: 1%;
+  color: var(--secondary);
+  width: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.8;
+  }
+
+  .modal {
+    width: 90%;
+    height: 90%;
+    min-height: 300px;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    background-color: white;
+    opacity: 1;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .closeButton {
+    margin-left: 90%;
+    margin-top: 2%;
+  }
+}
