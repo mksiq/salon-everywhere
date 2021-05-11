@@ -2,6 +2,7 @@
   border: 1px solid var(--secondary-light);
   padding: 5px;
   border-radius: 10px;
+  background-color: white;
 }
 
 .icon {
